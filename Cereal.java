@@ -1,51 +1,64 @@
-public class Cereal 
+/**
+ * Cereal.java  
+ *
+ * @author – Myka Imbat
+ * @author – 5th
+ * 
+ */
+public class Cereal
 {
-    private String name; 
-    private int calories; 
-    private double fiber; 
-    private double carbohydrates; 
-    private double cups; 
+   private String name; 
+   private int calories; 
+   private double fiber, carbs, cups; 
 
-    public Cereal (String name, int calories, double fiber, double carbohydrates, double cups){
-        this.name = name; 
-        this.calories = calories; 
-        this.fiber = fiber; 
-        this.carbohydrates = carbohydrates; 
-        this.cups = cups; 
-    }
-    
-    public String getName() {
-        return name; 
+   public Cereal(String initName, int initCal, double initFiber, 
+                 double initCarbs,  double initCups)
+   {
+      name = initName; 
+      calories = initCal; 
+      fiber = initFiber; 
+      carbs = initCarbs;
+      cups = initCups; 
+   }
+   /* Accessor method returns the value stored in the instance variable name. */
+   public String getName()
+   {
+      return name;
+   }
 
-    }
+   /* Accessor method returns the value stored in the instance variable carbs. */      
+   public double getCarbs()
+   {
+      return carbs;
+   }
 
-      public int getCalories() {
-        return calories; 
+   /* Accessor method returns the value stored in the instance variable cups. */       
+   public double getCups()
+   { 
+      return cups;
+   }
 
-    }
+   /* Accessor method returns the value stored in the instance variable fiber. */
+   public double getFiber() 
+   { 
+      return fiber;
+   }
 
-      public double getFiber() {
-        return fiber; 
-
-    }
-
-    public double getCarbohydrates() {
-        return carbohydrates;
-    }
+   /* Accessor method returns the value stored in the instance variable calories.  
+    */
+   public int getCalories()
+   {
+      return calories;
+   }
 
 
-  public double  getCups() {
-        return cups; 
-
-    }
-
- public String toString()
-    {
-        return "Cereal Name: " + name +
-               "\nCalories: " + calories +
-               "\nFiber: " + fiber +
-               "\nCarbohydrates: " + carbohydrates +
-               "\nCups: " + cups;
-    }
-
+   /* toString method returns the values stored in the instance variables   
+      concatenated in a sentence. */
+   public String toString()
+   {
+      return "Cereal: " + name + " has: " + calories 
+              + "calories, in a " + cups + " cup serving, with "
+              + fiber + "grams of fiber and "
+              + carbs + "grams of carbohydrates";
+   }
 }
