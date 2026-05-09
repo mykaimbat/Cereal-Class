@@ -2,7 +2,7 @@
  * Cereal.java  
  *
  * @author – Myka Imbat
- * @author – 5th
+ * @author – 5th Period 
  * 
  */
 public class Cereal
@@ -59,6 +59,6 @@ public class Cereal
       return "Cereal: " + name + " has: " + calories 
               + "calories, in a " + cups + " cup serving, with "
               + fiber + "grams of fiber and "
-              + carbs + "grams of carbohydrates";
+              + carbs +"grams of carbohydrates";
    }
 }
